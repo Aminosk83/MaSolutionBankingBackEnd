@@ -7,9 +7,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace BankingApp.L._2.Rest.Controllers
 {
+    [EnableCors(origins:"*",headers:"*",methods:"*")]
     public class ComptesController : ApiController
     {
         //private ICompteBusiness busniness = new CompteBusniessImpl();
